@@ -1,5 +1,7 @@
-import {capitalize} from 'lodash'
+const _ = require('lodash')
 
-export default function (name: string) {
-  return 'Hello, ' + capitalize(name) + '!'
+function hello(name: string) {
+  return 'Hello, ' + _.capitalize(name) + '!'
 }
+
+hello('rollup');
